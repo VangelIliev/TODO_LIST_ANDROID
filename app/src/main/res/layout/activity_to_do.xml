@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToDo"
+    android:orientation="vertical"
+    android:background="@drawable/movies">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:id="@+id/itemET"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:hint="Insert Item"
+            android:textColorHint="@android:color/white">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="37dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Add"
+            android:textColor="@android:color/black">
+
+        </Button>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/itemList"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:layout_marginBottom="12dp"
+        android:animateLayoutChanges="false"
+        android:cacheColorHint="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/changeBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:text="Change Password" />
+
+        <Button
+            android:id="@+id/viewAllEmails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="View Emails" />
+
+        <Button
+            android:id="@+id/ViewAll"
+            android:layout_width="119dp"
+            android:layout_height="43dp"
+            android:text="View Users" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/idTV"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/DeleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Profile" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/LogOutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Log Out"
+        tools:text="Log Out" />
+
+</LinearLayout>
+
+
+
+
+
+
